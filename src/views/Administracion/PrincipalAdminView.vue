@@ -7,7 +7,7 @@
                 <div>
                     <p class="nav-link mb-0 fs-5">{{ userStore.username }}</p>
                     <img v-if="perfilStore.imagen_url"
-                        :src="`${API_URL}` / `${perfilStore.imagen_url}`"
+                        :src="perfilStore.imagen_url"
                         alt="Perfil" class="rounded-circle ms-2" width="40" height="40" />
                     <img v-else src="@/assets/perfil_default.png" alt="Perfil por defecto" class="rounded-circle ms-2"
                         width="40" height="40" />
